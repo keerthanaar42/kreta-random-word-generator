@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRETA</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MAIN PAGE -->
+
+    <div id="mainPage">
+
+        <header>
+            <h2>KRETA</h2>
+        </header>
+
+        <div class="container">
+
+            <div class="left-panel">
+
+                <h1 class="title">GO ON</h1>
+
+                <div class="instruction-box">
+                    <ol>
+                        <li>Select your module</li>
+                        <li>Spin the topics</li>
+                        <li>Set the timer</li>
+                        <li>Explain</li>
+                    </ol>
+                </div>
+
+            </div>
+
+            <div class="right-panel">
+
+                <div class="modules">
+
+                    <button class="module-btn active" data-module="C">C</button>
+
+                    <button class="module-btn" data-module="DS">DS</button>
+
+                    <button class="module-btn" data-module="MC">MC</button>
+
+                    <button class="module-btn" data-module="LI">LI</button>
+
+                </div>
+
+                <div class="slot-machine">
+
+                    <div id="top-word" class="fade-word"></div>
+
+                    <hr>
+
+                    <div id="middle-word">Press Spin</div>
+
+                    <hr>
+
+                    <div id="bottom-word" class="fade-word"></div>
+
+                </div>
+
+                <div class="controls">
+
+                    <button id="spinBtn">Spin</button>
+
+                    <button id="timerBtn">Timer</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="star">★</div>
+
+    </div>
+
+
+
+    <!-- TIMER PAGE -->
+
+    <div id="timerPage">
+
+        <button id="backBtn">← Back</button>
+
+        <h1 id="timerTopic">Selected Topic</h1>
+
+        <div class="timer-container">
+
+            <svg width="300" height="300">
+
+                <circle
+                    class="bg-circle"
+                    cx="150"
+                    cy="150"
+                    r="120">
+                </circle>
+
+                <circle
+                    id="progressCircle"
+                    class="progress-circle"
+                    cx="150"
+                    cy="150"
+                    r="120">
+                </circle>
+
+            </svg>
+
+            <div id="timerDisplay">
+                05:00
+            </div>
+
+        </div>
+
+        <select id="timeSelect">
+            <option value="60">1 Minute</option>
+            <option value="180">3 Minutes</option>
+            <option value="300" selected>5 Minutes</option>
+            <option value="600">10 Minutes</option>
+        </select>
+
+        <div class="timer-buttons">
+
+            <button id="startTimer">
+                Start
+            </button>
+
+            <button id="resetTimer">
+                Reset
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
