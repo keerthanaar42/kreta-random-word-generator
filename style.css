@@ -1,0 +1,279 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #f2f2f2,
+        #dddddd
+    );
+
+    min-height:100vh;
+
+    overflow:hidden;
+}
+
+header{
+    padding:20px 40px;
+}
+
+.container{
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:flex-start;
+
+    margin-top:30px;
+}
+
+.title{
+
+    font-size:90px;
+    font-weight:bold;
+}
+
+.instruction-box{
+
+    margin-top:40px;
+
+    border:6px dashed black;
+
+    width:500px;
+    height:300px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.instruction-box ol{
+
+    margin:0;
+    padding-left:40px;
+}
+.instruction-box li{
+
+    margin:20px 0;
+
+    font-size:30px;
+}
+
+.modules{
+
+    display:flex;
+
+    gap:15px;
+}
+
+.module-btn{
+
+    width:150px;
+    height:80px;
+
+    border-radius:25px;
+
+    border:2px solid black;
+
+    background:white;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.module-btn:hover{
+
+    transform:translateY(-5px);
+}
+
+.active{
+
+    background:black;
+    color:white;
+}
+
+.slot-machine{
+
+    margin-top:100px;
+
+    text-align:center;
+
+    width:600px;
+}
+
+.slot-machine hr{
+
+    margin:15px 0;
+}
+
+.fade-word{
+
+    opacity:.3;
+
+    font-size:30px;
+
+    height:40px;
+}
+
+#middle-word{
+
+    font-size:48px;
+
+    font-weight:bold;
+
+    min-height:60px;
+}
+
+.controls{
+
+    margin-top:80px;
+
+    display:flex;
+
+    gap:40px;
+
+    justify-content:center;
+}
+
+.controls button{
+
+    width:180px;
+    height:80px;
+
+    border-radius:25px;
+
+    font-size:32px;
+
+    cursor:pointer;
+}
+
+#star{
+
+    position:absolute;
+
+    bottom:60px;
+    right:50px;
+
+    font-size:160px;
+
+    cursor:pointer;
+
+    user-select:none;
+}
+
+@keyframes bounce{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.3);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+.bounce{
+
+    animation:bounce .5s;
+}
+
+/* TIMER PAGE */
+
+#timerPage{
+
+    display:none;
+
+    text-align:center;
+
+    padding-top:20px;
+}
+
+.timer-container{
+
+    position:relative;
+
+    width:300px;
+
+    margin:30px auto;
+}
+
+#timerDisplay{
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:
+    translate(-50%,-50%);
+
+    font-size:48px;
+
+    font-weight:bold;
+}
+
+.bg-circle{
+
+    fill:none;
+
+    stroke:#ddd;
+
+    stroke-width:15;
+}
+
+.progress-circle{
+
+    fill:none;
+
+    stroke:black;
+
+    stroke-width:15;
+
+    stroke-linecap:round;
+
+    transform:rotate(-90deg);
+
+    transform-origin:center;
+
+    stroke-dasharray:754;
+
+    stroke-dashoffset:0;
+}
+
+.timer-buttons{
+
+    margin-top:20px;
+}
+
+.timer-buttons button{
+
+    width:150px;
+
+    height:60px;
+
+    margin:10px;
+
+    font-size:24px;
+}
+
+#backBtn{
+
+    position:absolute;
+
+    left:20px;
+
+    top:20px;
+}
